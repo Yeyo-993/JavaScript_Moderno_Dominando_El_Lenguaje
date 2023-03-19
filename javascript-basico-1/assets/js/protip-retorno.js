@@ -29,7 +29,7 @@ const tony = {
     nombre: 'Tony Stark',
     codeName: 'Ironman',
     vivo: false,
-    edad: 40,
+     edad: 40,
     trajes: ['Mark I', 'Mark V', 'Hulkbuster'],
 };
 
