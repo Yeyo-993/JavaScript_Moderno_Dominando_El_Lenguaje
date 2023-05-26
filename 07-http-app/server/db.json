@@ -451,13 +451,11 @@
       "gender": "male"
     },
     {
+      "balance": 1500,
+      "first_name": "Sergio",
+      "isActive": true,
+      "last_name": "Reinoso",
       "id": 51
-    },
-    {
-      "id": 52
-    },
-    {
-      "id": 53
     }
   ]
 }

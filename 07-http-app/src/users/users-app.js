@@ -11,15 +11,16 @@ import { saveUser } from "./use-cases/save-user";
  */
 export const UsersApp = async( element ) => {
 
-    // element.innerHTML = 'Loding...';
+    element.innerHTML = 'Loding...';
     await usersStore.loadNextPage();
+    element.innerHTML = '';
 
     renderTable( element );
     renderButtons( element );
     renderAddButton( element );
-    renderModal( element, async(userLike) => {
-        const user = await saveUser(userLike);
-        usersStore.onUserChanged(user);
+    renderModal( element, async( userLike ) => {
+        const user = await saveUser( userLike );
+        usersStore.onUserChanged( user );
         renderTable();
     });
 

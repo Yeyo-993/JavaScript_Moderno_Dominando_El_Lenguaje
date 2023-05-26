@@ -1,4 +1,4 @@
-import modalHTML from './render-modal.html?raw';
+import modalHtml from './render-modal.html?raw';
 import './render-modal.css';
 
 let modal, form;
@@ -25,7 +25,7 @@ export const renderModal = ( element, callback ) => {
     if( modal ) return;
 
     modal = document.createElement('div');
-    modal.innerHTML = modalHTML;
+    modal.innerHTML = modalHtml;
     modal.className = 'modal-container hide-modal';
     form = modal.querySelector('form');
 
@@ -57,7 +57,7 @@ export const renderModal = ( element, callback ) => {
         }
 
         // console.log(userLike);
-        await callback(userLike)
+        await callback(userLike);
 
         hideModal();
 
